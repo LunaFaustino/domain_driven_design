@@ -7,5 +7,15 @@ public class Produto {
 	private String marca;
 	private int quantidade;
 	private double valor;
+	
+	// setters
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+	
+	// getters
+	public String getTipo() {
+		return tipo;
+	}
 
 }
