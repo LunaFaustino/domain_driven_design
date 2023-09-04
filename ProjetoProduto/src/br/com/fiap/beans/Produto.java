@@ -1,5 +1,5 @@
 package br.com.fiap.beans;
 
-public class ProjetoProduto {
+public class Produto {
 
 }
