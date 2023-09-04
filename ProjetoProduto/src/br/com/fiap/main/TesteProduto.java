@@ -1,5 +1,7 @@
 package br.com.fiap.main;
 
+import javax.swing.JOptionPane;
+
 import br.com.fiap.beans.Produto;
 
 public class TesteProduto {
@@ -9,16 +11,16 @@ public class TesteProduto {
 		Produto objetoProduto = new Produto();
 		
 		// setters
-		objetoProduto.setTipo("Celular");
-		objetoProduto.setMarca("Apple");
-		objetoProduto.setQuantidade(1);
-		objetoProduto.setValor(5.000);
+		objetoProduto.setTipo(JOptionPane.showInputDialog("Digite o tipo de Produto"));
+		objetoProduto.setMarca(JOptionPane.showInputDialog("Digite a marca do Produto"));
+		objetoProduto.setQuantidade(Integer.parseInt(JOptionPane.showInputDialog("Digite a Quantidade")));
+		objetoProduto.setValor(Double.parseDouble(JOptionPane.showInputDialog("Digite o Valor")));
 		
 		// getters
-		objetoProduto.getTipo();
-		objetoProduto.getMarca();
-		objetoProduto.getQuantidade();
-		objetoProduto.getValor();
+		System.out.println("Tipo: " + objetoProduto.getTipo() + 
+				"\nMarca: " + objetoProduto.getMarca() + 
+				"\nQuantidade: " + objetoProduto.getQuantidade() + 
+				"\nValor: " + objetoProduto.getValor());
 
 	}
 

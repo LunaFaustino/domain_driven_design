@@ -2,7 +2,7 @@ package br.com.fiap.beans;
 
 public class Produto {
 	
-	// visibilidade, tipo de dado e varável
+	// visibilidade, tipo de dado e variável
 	private String tipo;
 	private String marca;
 	private int quantidade;
