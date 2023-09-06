@@ -13,6 +13,7 @@ public class TesteProduto {
 		// setters
 		objetoProduto.setTipo(JOptionPane.showInputDialog("Digite o tipo de Produto"));
 		objetoProduto.setMarca(JOptionPane.showInputDialog("Digite a marca do Produto"));
+		// int usa Integer.parseInt e double usa Double.parseDouble
 		objetoProduto.setQuantidade(Integer.parseInt(JOptionPane.showInputDialog("Digite a Quantidade")));
 		objetoProduto.setValor(Double.parseDouble(JOptionPane.showInputDialog("Digite o Valor")));
 		
