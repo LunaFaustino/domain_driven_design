@@ -22,6 +22,7 @@ public class TesteProduto {
 				"\nMarca: " + objetoProduto.getMarca() + 
 				"\nQuantidade: " + objetoProduto.getQuantidade() + 
 				"\nValor: " + objetoProduto.getValor());
+		
 
 	}
 
