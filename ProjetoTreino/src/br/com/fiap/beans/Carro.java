@@ -6,7 +6,7 @@ public class Carro {
 	private String marca;
 	private String modelo;
 	private int ano;
-	private double valor;
+	private double valorCarro;
 	
 	// setters
 	
@@ -20,7 +20,7 @@ public class Carro {
 		this.ano = ano;
 	}
 	public void setValor(double valor) {
-		this.valor = valor;
+		this.valorCarro = valor;
 	}
 	
 	// getters
@@ -35,7 +35,7 @@ public class Carro {
 		return ano;
 	}
 	public double getValor() {
-		return valor;
+		return valorCarro;
 	}
 
 }
