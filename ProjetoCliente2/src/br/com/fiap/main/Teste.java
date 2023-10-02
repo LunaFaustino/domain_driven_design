@@ -41,10 +41,10 @@ public class Teste {
 				"\n\nINFORMAÇÕES ENDEREÇO\n\n" + "Logradouro: " + objCliente.getEndereco().getLogradouro() + 
 				"\nNúmero: " + objCliente.getEndereco().getNumero() + 
 				"\nCEP: " + objCliente.getEndereco().getCep() + 
-				"\n\nINFORMAÇÕES COLABORADOR\n\n" + "Nome do colaborador: " + objColaborador.getNome() + 
-				"\nCargo: " + objColaborador.getCargo() + 
+				"\n\nINFORMAÇÕES COLABORADOR\n\n" + objColaborador.getNomeCargo() + 
 				"\nQuantidade de Horas: " + objColaborador.getQtdHora() + 
-				"\nValor da hora: " + objColaborador.getValorHora());
+				"\nValor da hora: " + objColaborador.getValorHora() + 
+				"\nSalário: " + objColaborador.salario());
 
 	}
 

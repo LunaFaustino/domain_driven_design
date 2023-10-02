@@ -33,5 +33,19 @@ public class Colaborador {
 		this.qtdHora = qtdHora;
 	}
 	
+	// get tudo (nome e cargo)
+	
+	public String getNomeCargo() {
+		
+		return "Nome: " + nome + "\nCargo: " + cargo;
+	}
+	
+	// fazendo salário
+	
+	public double salario() {
+		
+		return valorHora * qtdHora;
+		
+	}
 
 }
