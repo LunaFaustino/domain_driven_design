@@ -44,7 +44,8 @@ public class Teste {
 				"\n\nINFORMAÇÕES COLABORADOR\n\n" + objColaborador.getNomeCargo() + 
 				"\nQuantidade de Horas: " + objColaborador.getQtdHora() + 
 				"\nValor da hora: " + objColaborador.getValorHora() + 
-				"\nSalário: " + objColaborador.salario());
+				"\nSalário: " + objColaborador.calcularSalario() + 
+				"\nTaxa: " + objColaborador.pagarTaxa());
 
 	}
 

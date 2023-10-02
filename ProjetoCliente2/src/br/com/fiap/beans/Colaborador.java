@@ -40,12 +40,21 @@ public class Colaborador {
 		return "Nome: " + nome + "\nCargo: " + cargo;
 	}
 	
-	// fazendo salário
+	// metodo worker
 	
-	public double salario() {
+	public double calcularSalario() {
 		
 		return valorHora * qtdHora;
 		
+	}
+	
+	// metodo if else
+	public String pagarTaxa() {
+		if(calcularSalario() > 1000) {
+			return "Pagar Taxa";
+		} else {
+			return "Não paga taxa";
+		}
 	}
 
 }
