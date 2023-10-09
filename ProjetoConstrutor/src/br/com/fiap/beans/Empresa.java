@@ -15,8 +15,8 @@ public class Empresa {
 
 	public Empresa(String razaoSocial, String email, String segmento, int unidade) {
 		super();
-		this.razaoSocial = razaoSocial;
-		this.email = email;
+		this.razaoSocial = razaoSocial.toUpperCase();
+		this.email = email.toLowerCase();
 		this.segmento = segmento;
 		this.unidade = unidade;
 	}
