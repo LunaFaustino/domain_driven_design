@@ -1,91 +1,77 @@
 package br.com.salesfoce.beans;
 
-public class Empresa {
+public class Empresa extends Contato {
 
 	// atributos
 
 	private String razaoSoc;
 	private String nomeFant;
 	private String cnpj;
-	private String telefone;
-	private String email;
 	private String seg;
 	private Endereco endereco;
-
-	// construtor cheio
-
-	public Empresa(String razaoSoc, String nomeFant, String cnpj, String telefone, String email, String seg) {
-		super();
-		this.razaoSoc = razaoSoc;
-		this.nomeFant = nomeFant;
-		this.cnpj = cnpj;
-		this.telefone = telefone;
-		this.email = email;
-		this.seg = seg;
-	}
-
-	// construtor vazio
+	private Produto produto;
 
 	public Empresa() {
 		super();
 	}
 
-	// gets e sets
+	public Empresa(String telefone, String email, String razaoSoc, String nomeFant, String cnpj, String seg,
+			Endereco endereco, Produto produto) {
+		super(telefone, email);
+		this.razaoSoc = razaoSoc;
+		this.nomeFant = nomeFant;
+		this.cnpj = cnpj;
+		this.seg = seg;
+		this.endereco = endereco;
+		this.produto = produto;
+	}
 
 	public String getRazaoSoc() {
 		return razaoSoc;
-	}
-
-	public String getNomeFant() {
-		return nomeFant;
-	}
-
-	public String getCnpj() {
-		return cnpj;
-	}
-
-	public String getTelefone() {
-		return telefone;
-	}
-
-	public String getSeg() {
-		return seg;
-	}
-
-	public Endereco getEndereco() {
-		return endereco;
 	}
 
 	public void setRazaoSoc(String razaoSoc) {
 		this.razaoSoc = razaoSoc;
 	}
 
+	public String getNomeFant() {
+		return nomeFant;
+	}
+
 	public void setNomeFant(String nomeFant) {
 		this.nomeFant = nomeFant;
+	}
+
+	public String getCnpj() {
+		return cnpj;
 	}
 
 	public void setCnpj(String cnpj) {
 		this.cnpj = cnpj;
 	}
 
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
+	public String getSeg() {
+		return seg;
 	}
 
 	public void setSeg(String seg) {
 		this.seg = seg;
 	}
 
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
 	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
 	}
 
-	public String getEmail() {
-		return email;
+	public Produto getProduto() {
+		return produto;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setProduto(Produto produto) {
+		this.produto = produto;
 	}
 
 }
