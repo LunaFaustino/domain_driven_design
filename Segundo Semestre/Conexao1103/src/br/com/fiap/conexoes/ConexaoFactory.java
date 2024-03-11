@@ -13,12 +13,12 @@ public class ConexaoFactory {
 		// driver
 		Class.forName("oracle.jdbc.driver.OracleDriver");
 		
+		// conexão
+		return DriverManager.getConnection("jdbc:oracle:thin:@oracle.fiap.com.br:1521:orcl","rm552473","080100");
 		
-		
-		return DriverManager.getConnection("jdbc:oracle:thin:@oracle.fiap.com.br:1521:orcl",
-				"rm552473","080100");
 		
 		
 	}
+	
 
 }

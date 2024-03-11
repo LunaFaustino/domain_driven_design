@@ -5,15 +5,13 @@ import java.sql.SQLException;
 
 import br.com.fiap.conexoes.ConexaoFactory;
 
-public class TesteConexao {
+public class Teste {
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		
-		Connection c = new ConexaoFactory().conexao();
-		
-		System.out.println("Conectado com o Banco de Dados");
-		c.close();
-
+		Connection cn = new ConexaoFactory().conexao();
+		System.out.println("Conectado com sucesso");
+		cn.close();
 	}
 
 }
