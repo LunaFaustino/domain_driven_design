@@ -2,7 +2,10 @@ package br.com.fiap.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import br.com.fiap.beans.Produto;
 import br.com.fiap.conexoes.ConexaoFactory;
@@ -57,6 +60,24 @@ public class ProdutoDAO {
 		return "Produto atualizado com sucesso";
 	}
 	
+	// select
+	
+	public List<Produto> visualizar() throws SQLException{
+		List<Produto> listaProduto = new ArrayList<Produto>();
+		PreparedStatement stmt = minhaConexao.prepareStatement("select * from t_fiap_produto");
+		ResultSet rs = stmt.executeQuery();
+		
+		while(rs.next()) {
+			Produto produto = new Produto();
+			produto.setCodigo(rs.getInt(1));
+			produto.setTipo(rs.getString(2));
+			produto.setMarca(rs.getString(3));
+			produto.setValor(rs.getDouble(4));
+			listaProduto.add(produto);
+		}
+		
+		return listaProduto;
+	}
 	
 
 }
