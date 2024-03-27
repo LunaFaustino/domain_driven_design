@@ -30,11 +30,10 @@ public class TesteVisualizar {
 		
 		List<Produto> listaProduto = (ArrayList<Produto>) pDao.visualizar();
 		
-		Produto objProduto = new Produto();
-		
 		if(listaProduto != null) {
 			for (Produto p : listaProduto) {
-				System.out.println("Código: " + p.getCodigo() + " " + p.getTipo() + " " + p.getMarca() + " " + p.getValor());
+				System.out.println(p.getCodigo() + 
+						" " + p.getTipo() + " " + p.getMarca() + " " + p.getValor());
 			}
 		}
 
