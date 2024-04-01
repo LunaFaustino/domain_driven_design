@@ -196,7 +196,7 @@ public class Menu {
 				if(listaProduto != null) {
 					System.out.println("\nPRODUTOS\n");
 					for (Produto produto : listaProduto) {
-						System.out.println(produto.getId() + " " + produto.getCodigo() + " " + produto.getNome() + " " + produto.getTipo() + " " + produto.getDescricao() + " " + produto.getDisponibilidade() + " " + produto.getPrazoLicensa() + " " + produto.getValorProduto());
+						System.out.println(produto.getId() + " " + produto.getCodigo() + " " + produto.getNome() + " " + produto.getPrazoLicensa() + " " + produto.getValorProduto());
 					}
 				}
 				
