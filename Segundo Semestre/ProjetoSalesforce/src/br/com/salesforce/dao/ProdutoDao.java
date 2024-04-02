@@ -20,16 +20,13 @@ public class ProdutoDao {
 	}
 
 	public String inserir(Produto produto) throws SQLException {
-		PreparedStatement stmt = minhaConexao.prepareStatement("insert into T_SGDD_PRODUTO values(?,?,?,?,?,?,?,?)");
+		PreparedStatement stmt = minhaConexao.prepareStatement("insert into T_SGDD_PRODUTO values(?,?,?,?,?)");
 
 		stmt.setInt(1, produto.getCodigo());
 		stmt.setString(2, produto.getNome());
-		stmt.setString(3, produto.getTipo());
-		stmt.setString(4, produto.getDescricao());
-		stmt.setString(5, produto.getDisponibilidade());
-		stmt.setString(6, produto.getPrazoLicensa());
-		stmt.setDouble(7, produto.getValorProduto());
-		stmt.setInt(8, produto.getId());
+		stmt.setString(3, produto.getPrazoLicensa());
+		stmt.setDouble(4, produto.getValorProduto());
+		stmt.setInt(5, produto.getId());
 		stmt.execute();
 		stmt.close();
 
@@ -45,12 +42,9 @@ public class ProdutoDao {
 			Produto produto = new Produto();
 			produto.setCodigo(rs.getInt(1));
 			produto.setNome(rs.getString(2));
-			produto.setTipo(rs.getString(3));
-			produto.setDescricao(rs.getString(4));
-			produto.setDisponibilidade(rs.getString(5));
-			produto.setPrazoLicensa(rs.getString(6));
-			produto.setValorProduto(rs.getDouble(7));
-			produto.setId(rs.getInt(8));
+			produto.setPrazoLicensa(rs.getString(3));
+			produto.setValorProduto(rs.getDouble(4));
+			produto.setId(rs.getInt(5));
 			listaProduto.add(produto);
 		}
 

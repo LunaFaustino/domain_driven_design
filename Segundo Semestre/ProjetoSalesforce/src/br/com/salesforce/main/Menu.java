@@ -62,7 +62,7 @@ public class Menu {
 		String opcao1_2;
 
 		while (true) {
-			opcao1 = JOptionPane.showInputDialog("Digite uma opção: \n1 - Cadastrar cliente \n2 - Cadastrar contato \n3 - Cadastrar endereço \n4 - Cadastrar Produto \n5 - Visualizar todos os cadastros \n6 - Sair");
+			opcao1 = JOptionPane.showInputDialog("Digite uma opção: \n1 - Cadastrar cliente \n2 - Cadastrar contato \n3 - Cadastrar endereço \n4 - Cadastrar produto \n5 - Visualizar todos os cadastros \n6 - Sair");
 
 			switch (opcao1) {
 			case "1":
@@ -99,7 +99,6 @@ public class Menu {
 						objPj.setCnpj(texto("Digite o CNPJ do cliente"));
 						objPj.setRazaoSocial(texto("Digite a razão social"));
 						objPj.setQtFuncionarios(inteiro("Digite a quantidade de funcionários da empresa"));
-						objPj.setSetorResponsavel(texto("Digite o setor responsável pelo contrato"));
 						objPj.setCodigo(objCl.getCodigo());
 						
 						JOptionPane.showMessageDialog(null, pjDao.inserir(objPj));
@@ -151,9 +150,6 @@ public class Menu {
 					
 					objProduto.setCodigo(inteiro("Digite o código do produto"));
 					objProduto.setNome(texto("Digite o nome do produto"));
-					objProduto.setTipo(texto("Digite o tipo"));
-					objProduto.setDescricao(texto("Digite a descrição"));
-					objProduto.setDisponibilidade(texto("Digite a disponibilidade"));
 					objProduto.setPrazoLicensa(texto("Digite o prazo da licensa"));
 					objProduto.setValorProduto(real("Digite o valor"));
 					objProduto.setId(objCl.getCodigo());
@@ -175,7 +171,7 @@ public class Menu {
 				if(listaPj != null) {
 					System.out.println("\nCLIENTES PJ\n");
 					for (ClientePj pj : listaPj) {
-						System.out.println(pj.getCodigo() + " " + pj.getCnpj() + " " + pj.getRazaoSocial() + " " + pj.getQtFuncionarios() + " " + pj.getSetorResponsavel());
+						System.out.println(pj.getCodigo() + " " + pj.getCnpj() + " " + pj.getRazaoSocial() + " " + pj.getQtFuncionarios());
 					}
 				}
 				
@@ -196,7 +192,7 @@ public class Menu {
 				if(listaProduto != null) {
 					System.out.println("\nPRODUTOS\n");
 					for (Produto produto : listaProduto) {
-						System.out.println(produto.getId() + " " + produto.getCodigo() + " " + produto.getNome() + " " + produto.getTipo() + " " + produto.getDescricao() + " " + produto.getDisponibilidade() + " " + produto.getPrazoLicensa() + " " + produto.getValorProduto());
+						System.out.println(produto.getId() + " " + produto.getCodigo() + " " + produto.getNome() + " " +  produto.getPrazoLicensa() + " " + produto.getValorProduto());
 					}
 				}
 				

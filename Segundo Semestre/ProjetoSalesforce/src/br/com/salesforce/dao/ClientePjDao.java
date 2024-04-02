@@ -20,13 +20,12 @@ public class ClientePjDao {
 	}
 
 	public String inserir(ClientePj clientePj) throws SQLException {
-		PreparedStatement stmt = minhaConexao.prepareStatement("insert into T_SGDD_CLIENTE_PJ values(?,?,?,?,?)");
+		PreparedStatement stmt = minhaConexao.prepareStatement("insert into T_SGDD_CLIENTE_PJ values(?,?,?,?)");
 
 		stmt.setString(1, clientePj.getCnpj());
 		stmt.setString(2, clientePj.getRazaoSocial());
 		stmt.setInt(3, clientePj.getQtFuncionarios());
-		stmt.setString(4, clientePj.getSetorResponsavel());
-		stmt.setInt(5, clientePj.getCodigo());
+		stmt.setInt(4, clientePj.getCodigo());
 		stmt.execute();
 		stmt.close();
 
@@ -43,8 +42,7 @@ public class ClientePjDao {
 			clPj.setCnpj(rs.getString(1));
 			clPj.setRazaoSocial(rs.getString(2));
 			clPj.setQtFuncionarios(rs.getInt(3));
-			clPj.setSetorResponsavel(rs.getString(4));
-			clPj.setCodigo(rs.getInt(5));
+			clPj.setCodigo(rs.getInt(4));
 			listaPj.add(clPj);
 		}
 

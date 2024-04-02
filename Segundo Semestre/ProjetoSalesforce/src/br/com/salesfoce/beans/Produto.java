@@ -5,9 +5,6 @@ public class Produto {
 	private int id;
 	private int codigo;
 	private String nome;
-	private String tipo;
-	private String descricao;
-	private String disponibilidade;
 	private String prazoLicensa;
 	private double valorProduto;
 
@@ -15,15 +12,11 @@ public class Produto {
 		super();
 	}
 
-	public Produto(int id, int codigo, String nome, String tipo, String descricao, String disponibilidade,
-			String prazoLicensa, double valorProduto) {
+	public Produto(int id, int codigo, String nome, String prazoLicensa, double valorProduto) {
 		super();
 		this.id = id;
 		this.codigo = codigo;
 		this.nome = nome;
-		this.tipo = tipo;
-		this.descricao = descricao;
-		this.disponibilidade = disponibilidade;
 		this.prazoLicensa = prazoLicensa;
 		this.valorProduto = valorProduto;
 	}
@@ -42,30 +35,6 @@ public class Produto {
 
 	public void setCodigo(int codigo) {
 		this.codigo = codigo;
-	}
-
-	public String getTipo() {
-		return tipo;
-	}
-
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
-	}
-
-	public String getDescricao() {
-		return descricao;
-	}
-
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
-	}
-
-	public String getDisponibilidade() {
-		return disponibilidade;
-	}
-
-	public void setDisponibilidade(String disponibilidade) {
-		this.disponibilidade = disponibilidade;
 	}
 
 	public String getPrazoLicensa() {

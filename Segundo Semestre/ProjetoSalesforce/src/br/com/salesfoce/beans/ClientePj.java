@@ -5,19 +5,17 @@ public class ClientePj extends Cliente {
 	private String cnpj;
 	private String razaoSocial;
 	private int qtFuncionarios;
-	private String setorResponsavel;
 
 	public ClientePj() {
 		super();
 	}
 
 	public ClientePj(int codigo, String nome, Endereco endereco, Contato contato, Produto produto, String cnpj,
-			String razaoSocial, int qtFuncionarios, String setorResponsavel) {
+			String razaoSocial, int qtFuncionarios) {
 		super(codigo, nome, endereco, contato, produto);
 		this.cnpj = cnpj;
 		this.razaoSocial = razaoSocial;
 		this.qtFuncionarios = qtFuncionarios;
-		this.setorResponsavel = setorResponsavel;
 	}
 
 	public String getCnpj() {
@@ -42,14 +40,6 @@ public class ClientePj extends Cliente {
 
 	public void setQtFuncionarios(int qtFuncionarios) {
 		this.qtFuncionarios = qtFuncionarios;
-	}
-
-	public String getSetorResponsavel() {
-		return setorResponsavel;
-	}
-
-	public void setSetorResponsavel(String setorResponsavel) {
-		this.setorResponsavel = setorResponsavel;
 	}
 
 }
