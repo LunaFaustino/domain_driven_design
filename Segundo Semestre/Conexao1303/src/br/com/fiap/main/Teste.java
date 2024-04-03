@@ -8,7 +8,7 @@ import br.com.fiap.conexoes.ConexaoFactory;
 public class Teste {
 
 	public static void main(String[] args) throws SQLException, ClassNotFoundException {
-		
+
 		Connection cn = new ConexaoFactory().conexao();
 		System.out.println("Conexão feita");
 		cn.close();
