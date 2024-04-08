@@ -18,26 +18,26 @@ public class ViaCepService {
 
 	public Endereco getEndereco(String cep) throws ClientProtocolException, IOException {
 		Endereco endereco = null;
-		
-		HttpGet request = new HttpGet("https://viacep.com.br/ws/"+cep+"/json/");
-		
+
+		HttpGet request = new HttpGet("https://viacep.com.br/ws/" + cep + "/json/");
+
 		CloseableHttpClient httpClient = HttpClientBuilder.create().disableRedirectHandling().build();
-		
+
 		CloseableHttpResponse response = httpClient.execute(request);
-		
+
 		HttpEntity entity = response.getEntity();
-		
-		if(entity != null) {
-			
+
+		if (entity != null) {
+
 			String result = EntityUtils.toString(entity);
-			
+
 			Gson gson = new Gson();
-			
+
 			endereco = gson.fromJson(result, Endereco.class);
-			
+
 		}
-		
+
 		return endereco;
-		
+
 	}
 }

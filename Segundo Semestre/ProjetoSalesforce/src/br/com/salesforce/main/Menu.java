@@ -192,11 +192,9 @@ public class Menu {
 				if(listaProduto != null) {
 					System.out.println("\nPRODUTOS\n");
 					for (Produto produto : listaProduto) {
-<<<<<<< HEAD
+
 						System.out.println(produto.getId() + " " + produto.getCodigo() + " " + produto.getNome() + " " +  produto.getPrazoLicensa() + " " + produto.getValorProduto());
-=======
-						System.out.println(produto.getId() + " " + produto.getCodigo() + " " + produto.getNome() + " " + produto.getPrazoLicensa() + " " + produto.getValorProduto());
->>>>>>> 111cf37b99bd13fb651bd743873d1a52f099e873
+
 					}
 				}
 				
