@@ -12,32 +12,32 @@ import org.apache.http.util.EntityUtils;
 
 import com.google.gson.Gson;
 
-import br.com.fiap.model.Endereco;
+import br.com.fiap.model.Personagem;
 
-public class ViaCep {
-
-	public Endereco getEndereco(String cep) throws ClientProtocolException, IOException {
-		Endereco endereco = null;
-
-		HttpGet request = new HttpGet("https://viacep.com.br/ws/" + cep + "/json/");
-
-		CloseableHttpClient httpCliente = HttpClientBuilder.create().disableRedirectHandling().build();
-
-		CloseableHttpResponse response = httpCliente.execute(request);
-
+public class StarWarsAPI {
+	
+	public Personagem getPersonagem(String id) throws ClientProtocolException, IOException {
+		Personagem personagem = null;
+		
+		HttpGet request = new HttpGet("https://swapi.dev/api/people/"+id);
+		
+		CloseableHttpClient httpClient = HttpClientBuilder.create().disableRedirectHandling().build();
+		
+		CloseableHttpResponse response = httpClient.execute(request);
+		
 		HttpEntity entity = response.getEntity();
-
-		if (entity != null) {
-
+		
+		if(entity != null) {
+			
 			String result = EntityUtils.toString(entity);
-
+			
 			Gson gson = new Gson();
-
-			endereco = gson.fromJson(result, Endereco.class);
-
+			
+			personagem = gson.fromJson(result, Personagem.class);
+			
 		}
-
-		return endereco;
+		
+		return personagem;
 	}
 
 }

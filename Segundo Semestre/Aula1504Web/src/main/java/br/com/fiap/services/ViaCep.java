@@ -15,16 +15,22 @@ import com.google.gson.Gson;
 import br.com.fiap.model.Endereco;
 
 public class ViaCep {
-
+	
 	public Endereco getEndereco(String cep) throws ClientProtocolException, IOException {
 		Endereco endereco = null;
 
+		// request
 		HttpGet request = new HttpGet("https://viacep.com.br/ws/" + cep + "/json/");
 
+		
+		// client
 		CloseableHttpClient httpCliente = HttpClientBuilder.create().disableRedirectHandling().build();
 
+		
+		// response
 		CloseableHttpResponse response = httpCliente.execute(request);
 
+		// entity
 		HttpEntity entity = response.getEntity();
 
 		if (entity != null) {
