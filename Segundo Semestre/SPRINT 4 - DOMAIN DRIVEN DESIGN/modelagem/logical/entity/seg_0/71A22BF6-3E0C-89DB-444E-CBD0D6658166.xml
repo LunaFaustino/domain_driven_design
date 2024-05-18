@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="71A22BF6-3E0C-89DB-444E-CBD0D6658166" name="T_SGDD_PRODUTO ">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:46:08 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="4ACDAB13-7953-0F64-87A1-211026D08891" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_produto" id="67A16008-EAAB-9FD4-A654-26B7C56FB49E">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:46:23 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="4ACDAB13-7953-0F64-87A1-211026D08891" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome" id="5F922735-1DEB-9BD4-30FE-9E6EBA1CFAEF">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:46:28 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="4ACDAB13-7953-0F64-87A1-211026D08891" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prazo_licensa" id="3F90A6C5-770B-A625-EDA0-80B5F2F85B8C">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:46:31 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="4ACDAB13-7953-0F64-87A1-211026D08891" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valor_produto" id="B64398B6-4155-9905-D973-6C2279307DDD">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:46:35 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="4ACDAB13-7953-0F64-87A1-211026D08891" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_cliente" id="894107B7-EBEE-49ED-A2EB-8CA10D0B0668">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:58:01 UTC</createdTime>
+<generatorID>690C2ABC-2918-C97F-2425-78A038BDF366</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="4ACDAB13-7953-0F64-87A1-211026D08891" value="true"/>
+</engineerTo>
+<referedAttribute>FB70DA77-6456-722B-AB90-291C1B3FA56C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EFA12EDA-67FD-456A-6AED-87A8BDBF4D86" name="T_SGDD_PRODUTO PK">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:46:55 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="4ACDAB13-7953-0F64-87A1-211026D08891" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>67A16008-EAAB-9FD4-A654-26B7C56FB49E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

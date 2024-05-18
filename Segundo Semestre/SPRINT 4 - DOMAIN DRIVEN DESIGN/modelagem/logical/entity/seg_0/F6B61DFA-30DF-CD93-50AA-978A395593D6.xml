@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F6B61DFA-30DF-CD93-50AA-978A395593D6" name="T_SGDD_CONTATO">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:46:04 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="4ACDAB13-7953-0F64-87A1-211026D08891" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="tel_celular" id="F53EE3AE-630C-1E6C-9908-5BFD148E0B2C">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:49:11 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="4ACDAB13-7953-0F64-87A1-211026D08891" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tel_fixo" id="E91412F9-AE2C-FB53-FB65-6CF1248AF0DE">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:49:14 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="4ACDAB13-7953-0F64-87A1-211026D08891" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="743FD6D1-1770-3C13-34DA-91962313D6D5">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:49:16 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="4ACDAB13-7953-0F64-87A1-211026D08891" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_cliente" id="DCC9E8BB-B935-F53F-AF38-5504AD465910">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:57:57 UTC</createdTime>
+<generatorID>59E69E44-4026-D1BA-3700-B3382AD7C3EA</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="4ACDAB13-7953-0F64-87A1-211026D08891" value="true"/>
+</engineerTo>
+<referedAttribute>FB70DA77-6456-722B-AB90-291C1B3FA56C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="571032A8-71C5-382A-7EF8-497599089DF5" name="T_SGDD_CONTATO PK">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:49:23 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="4ACDAB13-7953-0F64-87A1-211026D08891" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F53EE3AE-630C-1E6C-9908-5BFD148E0B2C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

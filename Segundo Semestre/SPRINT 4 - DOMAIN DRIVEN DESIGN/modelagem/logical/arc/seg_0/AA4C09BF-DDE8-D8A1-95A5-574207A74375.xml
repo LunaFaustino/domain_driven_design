@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Arc class="oracle.dbtools.crest.model.design.logical.Arc" directorySegmentName="seg_0" id="AA4C09BF-DDE8-D8A1-95A5-574207A74375" name="Arc_1">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:58:10 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="4ACDAB13-7953-0F64-87A1-211026D08891" value="true"/>
+</engineerTo>
+<entity>298F784B-7A55-8979-A3C0-5374720DA8A6</entity>
+<relations>
+<relationID>8AA00B4C-E271-441D-DB6D-B9199061D0BF</relationID>
+<relationID>AF5020D3-DC8A-FACA-FD6B-57538D9A1AD2</relationID>
+</relations>
+</Arc>

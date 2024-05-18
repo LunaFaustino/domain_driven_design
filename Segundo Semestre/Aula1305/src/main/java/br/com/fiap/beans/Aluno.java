@@ -1,5 +1,8 @@
 package br.com.fiap.beans;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Aluno {
 
 	private int rm;

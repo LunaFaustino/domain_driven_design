@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_3" directorySegmentName="seg_0" id="AF5020D3-DC8A-FACA-FD6B-57538D9A1AD2">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:57:23 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="4ACDAB13-7953-0F64-87A1-211026D08891" value="true"/>
+</engineerTo>
+<sourcePk>7526972F-E34A-370A-87A0-6CC2E8A303E2</sourcePk>
+<arc>AA4C09BF-DDE8-D8A1-95A5-574207A74375</arc>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>298F784B-7A55-8979-A3C0-5374720DA8A6</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>6155B186-769E-675B-8862-5C77E10171CD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

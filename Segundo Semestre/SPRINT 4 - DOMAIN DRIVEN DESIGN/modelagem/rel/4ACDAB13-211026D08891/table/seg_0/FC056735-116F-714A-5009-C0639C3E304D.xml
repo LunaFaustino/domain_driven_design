@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC056735-116F-714A-5009-C0639C3E304D" name="T_SGDD_CLIENTE_PJ">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:58:30 UTC</createdTime>
+<generatorID>6155B186-769E-675B-8862-5C77E10171CD</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cnpj" id="CD1CCEF3-4071-729C-25CF-C0F0EFE5AE82">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:58:30 UTC</createdTime>
+<generatorID>021C0FDE-06F8-B272-3D9A-63F5C0D63F04</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>18</dataTypeSize>
+<ownDataTypeParameters>18,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="razao_social" id="70574A1E-3B99-C07C-D2BC-20091D76576B">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:58:30 UTC</createdTime>
+<generatorID>82CD5505-5CE5-F186-D40A-7CD3190D26DF</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qt_funcionarios" id="30B80EE1-B9DE-0FA4-A2AD-ADB0E9BD55F2">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:58:30 UTC</createdTime>
+<generatorID>ACD835B6-95F0-C9A8-C95A-7FBD1D7968C8</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_SGDD_CLIENTE_cod_cliente" id="1077D4F8-7395-8AEC-84B3-D22F877F2C81">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:58:30 UTC</createdTime>
+<generatorID>1D40FDB9-8CA8-1641-F9B5-BD00BFE764B3</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="48BC8F69-A369-FCF4-0B39-640953D75463" referredColumn="09C7D258-7079-3F1C-BA6E-FFE96051BC85"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="05F82C63-8E7F-A0B5-CA73-D3077AA9EE34" name="T_SGDD_CLIENTE_PJ_PK">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:58:30 UTC</createdTime>
+<generatorID>B778EE6F-9936-A145-4E46-A36F520ADAE1</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD1CCEF3-4071-729C-25CF-C0F0EFE5AE82"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="016CCBD4-1230-930C-AF0C-AC05A0A68728" name="T_SGDD_CLIENTE_PJ__IDX">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:58:30 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>AF5020D3-DC8A-FACA-FD6B-57538D9A1AD2</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="1077D4F8-7395-8AEC-84B3-D22F877F2C81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ADE56AB6-99D6-A58C-F878-E86CAD52B94E" name="T_SGDD_CLIENTE_PJ_T_SGDD_CLIENTE_FK">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-18 22:58:30 UTC</createdTime>
+<generatorID>AF5020D3-DC8A-FACA-FD6B-57538D9A1AD2</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1077D4F8-7395-8AEC-84B3-D22F877F2C81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
