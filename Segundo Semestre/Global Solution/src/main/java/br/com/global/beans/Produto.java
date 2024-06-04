@@ -5,16 +5,18 @@ public class Produto {
 	private String tipo;
 	private double quantidade;
 	private String reciclagem;
+	private Empresa empresa;
 
 	public Produto() {
 		super();
 	}
 
-	public Produto(String tipo, double quantidade, String reciclagem) {
+	public Produto(String tipo, double quantidade, String reciclagem, Empresa empresa) {
 		super();
 		this.tipo = tipo;
 		this.quantidade = quantidade;
 		this.reciclagem = reciclagem;
+		this.setEmpresa(empresa);
 	}
 
 	public String getTipo() {
@@ -39,6 +41,14 @@ public class Produto {
 
 	public void setReciclagem(String reciclagem) {
 		this.reciclagem = reciclagem;
+	}
+
+	public Empresa getEmpresa() {
+		return empresa;
+	}
+
+	public void setEmpresa(Empresa empresa) {
+		this.empresa = empresa;
 	}
 
 }

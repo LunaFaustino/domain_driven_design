@@ -1,5 +1,6 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="9CE94D78-9263-3AD4-F6D4-313C083B235F" name="FORMULARIO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="4749F41D-D3AB-ED6A-F92F-9F0DF109BCA1" propertySourceId="" propertyTargetId=""/>
    <object objectType="Entity" objectID="298F784B-7A55-8979-A3C0-5374720DA8A6" name="T_SGDD_CLIENTE " seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="4749F41D-D3AB-ED6A-F92F-9F0DF109BCA1" propertySourceId="" propertyTargetId=""/>
    <object objectType="Entity" objectID="5D7D3C96-F874-E4E6-B64F-BC7719743FF9" name="T_SGDD_CLIENTE_PF" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="4749F41D-D3AB-ED6A-F92F-9F0DF109BCA1" propertySourceId="" propertyTargetId=""/>
    <object objectType="Entity" objectID="6155B186-769E-675B-8862-5C77E10171CD" name="T_SGDD_CLIENTE_PJ" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="4749F41D-D3AB-ED6A-F92F-9F0DF109BCA1" propertySourceId="" propertyTargetId=""/>

@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CADB94B5-BB03-C235-D2F1-F4A5D14FC9E6" name="FORMULARIO">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-20 15:54:29 UTC</createdTime>
+<generatorID>9CE94D78-9263-3AD4-F6D4-313C083B235F</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nome" id="F6E83458-F81F-182C-E27C-A40BB8611687">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-20 15:54:29 UTC</createdTime>
+<generatorID>A424A4C2-71AC-E0B8-E497-A85109C845A8</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="62589F46-12DD-DC9B-E7B1-FB2C5BAE893F">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-20 15:54:29 UTC</createdTime>
+<generatorID>E7E78764-4304-2CFE-04ED-D56AB531669D</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefone" id="23744202-C635-47B1-1529-8EDB949630C4">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-20 15:54:29 UTC</createdTime>
+<generatorID>133B9D91-B365-1BB1-732E-0A464D027754</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="empresa" id="622C7604-B600-593D-D28A-D74A0B2DE458">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-20 15:54:29 UTC</createdTime>
+<generatorID>2D99EB09-9571-60D0-B4B5-BB090CC889A6</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="regiao" id="4B905AE4-D384-54EE-0944-C7554E118833">
+<createdBy>Luna</createdBy>
+<createdTime>2024-05-20 15:54:29 UTC</createdTime>
+<generatorID>F3C72A4B-2590-2113-1FE0-8D2A88E338B3</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

@@ -1,5 +1,7 @@
 package br.com.global.models;
 
+import br.com.global.beans.Empresa;
+
 public class Endereco {
 
 	private int num;
@@ -9,15 +11,15 @@ public class Endereco {
 	private String bairro;
 	private String localidade;
 	private String uf;
+	private Empresa empresa;
 
 	public Endereco() {
 		super();
 	}
 
-	public Endereco(String id,int num, String cep, String logradouro, String complemento, String bairro, String localidade,
-			String uf) {
+	public Endereco(int num, String cep, String logradouro, String complemento, String bairro, String localidade,
+			String uf, Empresa empresa) {
 		super();
-		this.id = id;
 		this.num = num;
 		this.cep = cep;
 		this.logradouro = logradouro;
@@ -25,6 +27,7 @@ public class Endereco {
 		this.bairro = bairro;
 		this.localidade = localidade;
 		this.uf = uf;
+		this.empresa = empresa;
 	}
 
 	public int getNum() {
@@ -83,12 +86,12 @@ public class Endereco {
 		this.uf = uf;
 	}
 
-	public String getId() {
-		return id;
+	public Empresa getEmpresa() {
+		return empresa;
 	}
 
-	public void setId(String id) {
-		this.id = id;
+	public void setEmpresa(Empresa empresa) {
+		this.empresa = empresa;
 	}
 
 }

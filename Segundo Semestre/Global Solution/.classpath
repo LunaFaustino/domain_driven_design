@@ -22,6 +22,7 @@
 	<classpathentry kind="lib" path="lib/ojdbc11.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">

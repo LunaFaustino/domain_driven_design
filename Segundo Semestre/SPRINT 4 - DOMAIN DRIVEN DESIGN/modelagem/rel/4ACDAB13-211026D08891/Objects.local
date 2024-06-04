@@ -1,5 +1,6 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="CADB94B5-BB03-C235-D2F1-F4A5D14FC9E6" name="FORMULARIO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="4ACDAB13-7953-0F64-87A1-211026D08891" propertySourceId="" propertyTargetId=""/>
    <object objectType="Table" objectID="6B3958E9-7799-8970-0057-64E0A91A85AD" name="T_SGDD_CLIENTE" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="4ACDAB13-7953-0F64-87A1-211026D08891" propertySourceId="" propertyTargetId=""/>
    <object objectType="Table" objectID="CB578490-FB67-E2BE-4A60-9185C36257E5" name="T_SGDD_CLIENTE_PF" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="4ACDAB13-7953-0F64-87A1-211026D08891" propertySourceId="" propertyTargetId=""/>
    <object objectType="Table" objectID="FC056735-116F-714A-5009-C0639C3E304D" name="T_SGDD_CLIENTE_PJ" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="4ACDAB13-7953-0F64-87A1-211026D08891" propertySourceId="" propertyTargetId=""/>
